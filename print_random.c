@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-
+char randchar();
 
 int main()
 {
@@ -17,4 +17,8 @@ int main()
 	putchar('\n');
 
 	return(0);
+}
+
+char randchar(){
+    return 'A' + rand() % 26;
 }
